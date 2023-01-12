@@ -3,11 +3,11 @@ import {
   HeaderContainer,
   HeaderWrapper,
 } from "./styles";
-import Logo from "../assets/logo.png";
+import Logo from "../../../../assets/logo.png";
 import {
   CardInformation,
   CardInformationProps,
-} from "../components/CardInformation";
+} from "../../../../components/CardInformation";
 
 const dados: CardInformationProps[] = [
   {
