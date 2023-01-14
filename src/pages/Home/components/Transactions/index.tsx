@@ -1,16 +1,12 @@
-import { MagnifyingGlass } from "phosphor-react";
-import { SearchTransacion, TransactionsContainer } from "./styles";
+import { History } from "./History";
+import { SearchInput } from "./SearchInput";
+import { TransactionsContainer } from "./styles";
 
 export const Transaction = () => {
   return (
     <TransactionsContainer>
-      <SearchTransacion>
-        <input placeholder="Busque uma transação" />
-        <button>
-          <MagnifyingGlass size={20} weight='bold' />
-          Buscar
-        </button>
-      </SearchTransacion>
+      <SearchInput />
+      <History />
     </TransactionsContainer>
   );
 };

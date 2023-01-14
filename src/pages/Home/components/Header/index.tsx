@@ -1,9 +1,10 @@
 import {
   CardInformationContent,
   HeaderContainer,
-  HeaderWrapper,
+  HeaderContent,
+  NewTransactionButton,
 } from "./styles";
-import Logo from "../../../../assets/logo.png";
+import logoImg from "../../../../assets/logo.png";
 import {
   CardInformation,
   CardInformationProps,
@@ -27,14 +28,11 @@ const dados: CardInformationProps[] = [
 export const Header = () => {
   return (
     <HeaderContainer>
-      <HeaderWrapper>
-        <div>
-          <img src={Logo} alt="Logo" />
-          <h2>DT Money</h2>
-        </div>
-        <button>Nova transação</button>
-      </HeaderWrapper>
-      <CardInformationContent>
+      <HeaderContent>
+        <img src={logoImg} alt="Logo" />
+        <NewTransactionButton>Nova transação</NewTransactionButton>
+      </HeaderContent>
+      {/* <CardInformationContent>
         {dados.map((info) => (
           <CardInformation
             key={info.title}
@@ -42,7 +40,7 @@ export const Header = () => {
             total={info.total}
           />
         ))}
-      </CardInformationContent>
+      </CardInformationContent> */}
     </HeaderContainer>
   );
 };

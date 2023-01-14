@@ -2,37 +2,33 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
   width: 100%;
-  height: 13.25rem;
+  padding: 2.5rem 0 7.5rem;
   background: ${({ theme }) => theme["gray-900"]};
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
 `;
 
-export const HeaderWrapper = styled.div`
+export const HeaderContent = styled.div`
   width: 100%;
   max-width: 70rem;
-  margin: 80px auto 0;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+`;
 
-  > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
+export const NewTransactionButton = styled.button`
+  height: 50px;
+  padding: 0 1.25rem;
+  background: ${({ theme }) => theme["green-500"]};
+  color: ${({ theme }) => theme["white"]};
+  border: 0;
+  border-radius: 6px;
+  transition: background-color 0.5s;
+  cursor: pointer;
 
-  button {
-    background: ${({ theme }) => theme["green-500"]};
-    color: ${({ theme }) => theme["white"]};
-    padding: 0.75rem 1.25rem;
-    border-radius: 6px;
-    cursor: pointer;
+  &:hover {
+    background: ${({ theme }) => theme["green-700"]};
   }
 `;
 
